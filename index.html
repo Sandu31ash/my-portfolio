@@ -13,14 +13,16 @@
     <body>
 
     <div style="background-color:#323232;color:#CCCC;padding:10px;">
+        <header>
     <div align="right">
 
-        <a href="#" style="color: white; font-size: large; font-family: 'Comic Sans MS'" ><mark style="background-color: #A7033F;">Home</mark></a>
-        <a href="#pic1" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >About me</a>
+        <nav>
+        <a href="" style="color: white; font-size: large; font-family: 'Comic Sans MS'"><mark style="background-color: #A7033F;">Home</mark></a>
+        <a href="#about" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >About me</a>
         <a href="#projects" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >Projects</a>
         <a href="#assignments" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >Assignments</a>
         <a href="#contact" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >Contact me</a>
-
+        </nav>
 
 <!--        <a href="index.html" style="color: white; font-size: large; font-family: 'Comic Sans MS'" ><mark style="background-color: #A7033F;">Home</mark></a>-->
 <!--        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
@@ -33,6 +35,7 @@
 <!--        <a href="contact.html" style="color: white; font-size: large; font-family: 'Comic Sans MS'" >Contact me</a>-->
 
     </div>
+    </header>
 
     <br>
 
@@ -41,8 +44,12 @@
 <!--        &lt;!&ndash;            <source media="(min-width: 1000px)" srcset="../assests/images/my_pic2.png">&ndash;&gt;-->
 <!--    </div>-->
 
-    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    <img src="assests/images/logo.png" alt="website logo">
+        <section>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="../assests/images/logo.png">
+            <source media="(min-width: 800px)" srcset="../assests/images/logo2.png">
+            <img src="assests/images/logo.png" title="logo" alt="website logo">
+        </picture>
 
     <h1 style="font-family: cursive;" >Hey, It's me</h1>
     <!--<font size = "+5">Font size = "+5"</font><br />-->
@@ -51,84 +58,142 @@
 
     <h3 style="font-family: cursive">Software Engineer</h3>
 
-    <div>
-        <img src="assests/images/cvBtn.png" alt="">
-        <img src="assests/images/qr.png" alt="">
-    </div>
-        <br>
+    <a href="assests/pdf/la_brigade_de_cuisine.pdf" target="_blank"><img src="assests/images/cvBtn.png" alt=""></a>
+    <a href="assests/pdf/qr.pdf" target="_blank"><img src="assests/images/qr.png" alt=""></a><br><br>
 
-        <div align="left">
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <img src="assests/images/contacts2.png" alt="">
-        </div>
-        <img src="assests/images/my_pic2.png" alt="">
+<!--<a href="assests/pdf/la_brigade_de_cuisine.pdf" target="_blank"><button style="background-color: #A7033F; border-color: #A7033F">Download CV</button></a>-->
+<!--<a href="assests/pdf/qr.pdf"><button style="background-color: #A7033F; border-color: #A7033F">QR</button></a><br><br>-->
 
-    </div>
+            <a href="#contact"><img src="assests/images/whtsp.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/insta1.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/sanduni-h-b0255a27b/" target="_blank"><img src="assests/images/linkedin1.png" alt=""></a>
+            <a href="#contact"><img src="assests/images/gmail1.png" alt=""></a>
+            <a href="#contact"><img src="assests/images/slack2.png" alt=""></a>
+
+        <br><br>
+<!--        <img src="assests/images/contacts2.png" alt="">-->
+        <img src="assests/images/my_pic2.png" alt=""><br>
+
+        </section>
 
 <!--////////////////////////////////About me//////////////////////////////////////////-->
 
-    <div style="background-color:#323232;color:#CCCC;padding:10px;">
+        <section>
+<!--    <div style="background-color:#323232;color:#CCCC;padding:10px;">-->
 
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <img src="assests/images/about_my_pic.png" alt="" id="pic1">
+        <h2 style="font-family: cursive" id="about">About me</h2>
+        <img src="assests/images/about_my_pic.png" alt="">
+        <h2 style="font-family: cursive">Software Engineer</h2>
 
-        <p style="color: #E2E2E2; font-size: large; font-family: 'Comic Sans MS'">You’re warmly welcome to my portfolio, where I'm excited to let you have a look into who I am. As a passionate
-            software engineering student, I find immense joy in the art of coding and designing. With an open mind and a
-            knack for thinking out of the box, I relish the challenge of finding innovative solutions to complex problems.
-            Beyond the world of programming, there's another side of me that's filled with a deep love for animals. Their
-            enchanting presence and unwavering loyalty have captured my heart, and I cherish every opportunity to interact
-            with these wonderful creatures.So, as you delve into my portfolio, you'll discover a fusion of my technical
-            prowess, my open-mindedness, my adoration for animals etc. Together, let's embark on an extraordinary journey of
-            creativity, & innovation.</p>
+        <p style="color: #E2E2E2; font-size: large; font-family: 'Comic Sans MS'">You’re warmly welcome to my portfolio,
+            where I'm excited to let you have a look into who I am. As a passionate software engineering student,
+            I find immense joy in the art of coding and designing. With an open mind and a
+            knack for thinking out of the box, I relish the challenge of finding innovative solutions to complex
+            problems. Beyond the world of programming, there's another side of me that's filled with a deep love for
+            animals. Their enchanting presence and unwavering loyalty have captured my heart, and I cherish every opportunity to
+            interact with these wonderful creatures.So, as you delve into my portfolio, you'll discover a fusion of my
+            technical
+            prowess, my open-mindedness, my adoration for animals etc. Together, let's embark on an extraordinary
+            journey of creativity, & innovation.</p>
 
-        <br><br>
-
+        <br><br><br><br><br>
+        </section>
 
         <!--////////////////////////////////Education//////////////////////////////////////////-->
 
-        <span style="font-family: cursive; font-size: x-large">Studied @</span><br>
-        <span style="font-family: cursive">C.W.W.Kannangara Central College Matugama</span><br><br>
-        <span style="font-family: cursive">I studied at C.W.W.Kannangara Central College Matugama until grade 13.  And also I’ve got many achievements
+        <section>
+        <h2 style="font-family: cursive; font-size: x-large">Studied @</h2>
+        <p style="font-family: cursive">C.W.W.Kannangara Central College Matugama</p>
+        <p style="font-family: cursive">I studied at C.W.W.Kannangara Central College Matugama until grade 13.  And
+            also I’ve got many achievements
         in there such as zonal level competitions in several languages etc. I've successfully completed my    A/Ls in
-        maths stream in 2021.</span><br><br>
-        <span style="font-family: cursive">Ordinary Level <br> 2016 - Ordinary Level - Sinhala Medium
-    </span>
-        <br><br>
-        <span style="font-family: cursive">Advanced Level <br> 2021 - Advanced Level - Maths Stream</span>
-        <br><br>
+        maths stream in 2021.</p>
+        <p style="font-family: cursive">Ordinary Level <br> 2016 - Ordinary Level - Sinhala Medium</p>
+        <p style="font-family: cursive">Advanced Level <br> 2021 - Advanced Level - Maths Stream</p>
         <img src="assests/images/kcc_Logo.png" alt="">
 
         <br><br>
-        <img src="assests/images/go_to_web.png" alt="">
+        <a href="https://cwwkcc.lk/" target="_blank"><img src="assests/images/go_to_web.png" alt=""></a>
         <br><br><br><br>
 
 
-        <span style="font-family: cursive; font-size: x-large">Currently Studying @</span><br>
-        <span style="font-family: cursive">Institute of Software Engineering(IJSE)</span><br><br>
+        <h2 style="font-family: cursive; font-size: x-large">Currently Studying @</h2>
+        <p style="font-family: cursive">Institute of Software Engineering(IJSE)</p>
+        <p style="font-family: cursive">I changed my path into computer science(software engineering) from maths stream,
+            since I wanted to be a software engineer.</p>
+        <p style="font-family: cursive">On the way of achieving that aim, I currently studying at Institute of Software
+            Engineering (IJSE). I'm gonna continue my studies until I became a graduated software engineer in 3 years.</p>
         <img src="assests/images/ijse_logo.png" alt=""><br><br>
-        <img src="assests/images/go_to_web.png" alt=""><br><br><br><br><br><br><br>
+        <a href="https://www.ijse.lk/" target="_blank"><img src="assests/images/go_to_web_1.png" alt=""></a>
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        </section>
 
         <!--////////////////////////////////Skills//////////////////////////////////////////-->
 
-        <img src="assests/images/skills123.png" alt=""><br><br><br><br><br><br><br><br><br>
+        <section>
+        <img src="assests/images/skills123.png" alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
 
         <!--////////////////////////////////Projects//////////////////////////////////////////-->
 
-        <img src="assests/images/cuisine_c1.png" alt="" id="projects">
-        <img src="assests/images/cuisine_c2.png" alt="">
-        <img src="assests/images/inp_pro.png" alt=""><br><br>
+        <section>
+
+        <h2 style="font-family: cursive" id="projects">Projects</h2>
+        <a href="https://github.com/Sandu31ash/cuisine_compass" target="_blank"><img src="assests/images/cuisine_c1.png" alt=""></a>
+        <a href="https://github.com/Sandu31ash/cuisine_compass_layered/tree/master" target="_blank"><img src="assests/images/cuisine_c2.png" alt=""></a>
+        <a href="https://github.com/Sandu31ash/chat_app" target="_blank"><img src="assests/images/inp_pro.png" alt=""></a><br><br>
 
         <h3 style="font-family: cursive">1st Semester OOP Final Project - using MVC Architecture (Became the 9th place among the best 10 projects)</h3>
-        <h3 style="font-family: cursive">Cuisine Compass - Culinary Management System</h3>
+        <h3 style="font-family: cursive">Cuisine Compass - Culinary Management System</h3><br>
+        <h3 style="font-family: cursive">2nd semester Architecture & Design Patterns Final Project using Layered Architecture</h3>
+        <h3 style="font-family: cursive">Cuisine Compass - Culinary Management System</h3><br>
+        <h3 style="font-family: cursive">Network Programming Final Project-  Chat Application</h3>
+        <h3 style="font-family: cursive">Play Tech Customer Service Division Group Chat App</h3><br><br><br><br><br><br><br><br><br>
+
+        </section>
+
+        <!--////////////////////////////////Assignments//////////////////////////////////////////-->
+
+        <section>
+
+        <h2 style="font-family: cursive" id="assignments">Assignments</h2>
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+
+        <h3 style="font-family: cursive">Assignment 01 Assignment 02 Assignment 03</h3>
+
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+
+        <h3 style="font-family: cursive">Assignment 04 Assignment 05 Assignment 06</h3>
+
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+
+
+        <h3 style="font-family: cursive">Assignment 07 Assignment 08 Assignment 09</h3>
+
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+        <img src="assests/images/assign.png" alt="">
+
+        <h3 style="font-family: cursive">Assignment 10 Assignment 11 Assignment 12</h3>
+
+        </section>
 
         <br><br><br><br><br><br><br><br><br><br><br>
 
     </div>
 
+    </div>
 
+<!--///////////////////////////////Contact me///////////////////////////////////////////-->
 
-<!--//////////////////////////////////////////////////////////////////////////-->
-
+    <footer>
     <div style="background-color: #76002B">
 
         <hr style="border-color: #A7033F">
@@ -143,11 +208,11 @@
         <br> <br>
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <img src="assests/images/insta.png" alt="">
-        <span style="font-family: 'Comic Sans MS'; font-size: x-large">&nbsp;&nbsp;&nbsp;ash31</span>
+        <a href="https://www.instagram.com/" target="_blank"><span style="font-family: 'Comic Sans MS'; font-size: x-large; color: black">&nbsp;&nbsp;&nbsp;ash31</span></a>
         <br> <br>
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <img src="assests/images/linkedin.png" alt="">
-        <span style="font-family: 'Comic Sans MS'; font-size: x-large">&nbsp;&nbsp;&nbsp;in/sanduni-h-bo255a27b</span>
+        <a href="https://www.linkedin.com/in/sanduni-h-b0255a27b/" target="_blank"><span style="font-family: 'Comic Sans MS'; font-size: x-large; color:#000;">&nbsp;&nbsp;&nbsp;in/sanduni-h-bo255a27b</span></a>
         <br> <br>
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <img src="assests/images/gmail.png" alt="">
@@ -158,13 +223,13 @@
         <br><br>
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <img src="assests/images/git.png" alt="">
-        <span style="font-family: 'Comic Sans MS'; font-size: x-large">&nbsp;&nbsp;&nbsp;Sandu31ash</span>
+        <a href="https://github.com/Sandu31ash" target="_blank"><span style="font-family: 'Comic Sans MS'; font-size: x-large; color: black;">&nbsp;&nbsp;&nbsp;Sandu31ash</span></a>
 
         <hr style="border-color: #A7033F;">
 
 
-
     </div>
+    </footer>
     </body>
 
 </html>
