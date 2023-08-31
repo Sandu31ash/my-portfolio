@@ -1608,3 +1608,393 @@ header>div>picture{
     position: absolute;
     left: 60px;
 }
+
+
+/*///////////////////////////////////////////////footer////////////////////////////////////////////////*/
+
+
+footer{
+    position: absolute;
+    /*top: 450vh;*/
+    top: 675vh;
+    /*bottom: 0;*/
+    width: 100%;
+    height: 78vh;
+    /*bottom: 0;*/
+    /*background-color: #A7033F;*/
+    background-color: #76002B
+}
+
+footer>h1{
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    left: 50px;
+    color: #2A2A2A;
+    font-size: 7vh;
+}
+
+/*footer>h2{*/
+/*    position: absolute;*/
+/*    top: 70px;*/
+/*    left: 50px;*/
+/*    font-family: 'Indie Flower', cursive;*/
+/*}*/
+
+footer>form{
+    position: absolute;
+    /*top: 125px;*/
+    /*left: 50px;*/
+    top: 3vw;
+    /*left: 30vw;*/
+    left: 60vw;
+
+    /*padding-bottom: 0;*/
+    margin-bottom: 0;
+    padding: 20px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+footer>form:hover{
+    animation-name: my_animation;
+    animation-duration: 1s;
+    /*animation-direction: reverse;*/
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes my_animation {
+    0%{
+
+    }
+
+    25%{
+        border-top-color: palevioletred;
+        /*transform: rotate(360deg);*/
+    }
+
+    50%{
+        /*border-top-color: palevioletred;*/
+        border-right-color: palevioletred;
+    }
+
+    75%{
+        /*border-top-color: palevioletred;*/
+        /*border-right-color: palevioletred;*/
+        border-bottom-color: palevioletred;
+    }
+
+    100%{
+        /*border-top-color: palevioletred;*/
+        /*border-right-color: palevioletred;*/
+        /*border-bottom-color: palevioletred;*/
+        border-left-color: palevioletred;
+    }
+}
+
+footer>button {
+    position: absolute;
+    /*padding: 100px;*/
+    width: 10px;
+    height: 10px;
+    background: #FEC195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #FEC195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+
+    /*padding-right: 100px;*/
+
+}
+
+button:hover {
+    background: transparent;
+    color: #FEC195;
+    box-shadow: 0 0 25px #fec1958c;
+    cursor: pointer;
+}
+
+.fil0 {
+    fill: #FFFDEF
+}
+
+footer>form>.txt{
+    margin-bottom: 10px;
+    background-color: transparent;
+    /*border-radius: 20px;*/
+    color: white;
+    border-top-color: transparent;
+    border-bottom-color: #2A2A2A;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+input::placeholder,
+footer>form>.txt::placeholder{
+    color: #f8bbd0;
+}
+footer>form>#message::placeholder{
+    color: #f8bbd0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: transparent;
+    outline: none;
+    border-bottom-color: #2A2A2A;
+}
+
+
+/*footer>form>#name{*/
+/*    margin-bottom: 10px;*/
+/*    background-color: #2A2A2A;*/
+/*    border-radius: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*footer>form>#contactNo{*/
+/*    margin-bottom: 10px;*/
+/*    background-color: transparent;*/
+/*    !*border-radius: 20px;*!*/
+/*    color: white;*/
+/*    border-top-color: transparent;*/
+/*    border-bottom-color: black;*/
+/*    border-left-color: transparent;*/
+/*    border-right-color: transparent;*/
+/*}*/
+
+/*footer>form>#email{*/
+/*    margin-bottom: 10px;*/
+/*    background-color: #2A2A2A;*/
+/*    border-radius: 20px;*/
+/*    color: white;*/
+/*}*/
+
+footer>form>#message{
+    /*margin-bottom: 10px;*/
+    background-color: transparent;
+    /*border-radius: 10px;*/
+    color: white;
+}
+
+footer>form>fieldset>legend{
+    color: white;
+}
+
+footer>form>input[type="checkbox"] {
+    background-color: yellow;
+}
+
+footer>form>button{
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 1px solid #2A2A2A;
+    background-color: #2A2A2A;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+
+footer>#divCon{
+    position: absolute;
+    /*left: 40vw;*/
+    top: 125px;
+    left: 50px;
+}
+
+footer>#divCon>span{
+    font-family: 'Itim', cursive;
+    padding-left: 25px;
+}
+
+footer>#divCon>a{
+    text-decoration: none;
+    padding-left: 25px;
+    color: black;
+}
+
+footer>#divCon>a>span{
+    font-family: 'Itim', cursive;
+}
+
+footer>#divCV{
+    position:absolute;
+    /*bottom: 20px;*/
+    top: 66vh;
+    /*left: 70vw;*/
+    left: 30vw;
+    display: inline-flex;
+    padding-right: 120px;
+    padding-bottom: 0;
+}
+
+footer>#divCV>h3{
+    padding-top: 10px;
+    font-family: 'Indie Flower', cursive;
+    color: #2A2A2A;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+footer>#divCV>img{
+    padding: 10px;
+    width: 75px;
+    height: 50px;
+}
+
+/*footer>#divCV>a>img:hover{*/
+/*    border-top: 1px solid black;*/
+/*    border-radius: 25%;*/
+/*    animation-name: my_animation2;*/
+/*    animation-duration: 5s;*/
+/*    !*animation-direction: reverse;*!*/
+/*    animation-iteration-count: infinite;*/
+/*    !*animation-direction: alternate;*!*/
+/*}*/
+
+/*@keyframes my_animation2 {*/
+/*    0%{*/
+
+/*    }*/
+
+/*    25%{*/
+/*        border-top-color: black;*/
+/*        !*transform: rotate(360deg);*!*/
+/*    }*/
+
+/*    50%{*/
+/*        border-right-color: black;*/
+/*    }*/
+
+/*    75%{*/
+/*        border-bottom-color: black;*/
+/*    }*/
+
+/*    100%{*/
+/*        border-left-color: black;*/
+/*    }*/
+/*}*/
+
+footer>#divCV>a{
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 0;
+    right: 0;
+    top: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+footer>#divCV>#pdf2{
+    width: 125px;
+    height: 35px;
+    background-color: #2A2A2A;
+    border-radius: 25px;
+    border: 1px solid #F3005A;
+    text-decoration: none;
+    font-family: "Indie Flower";
+    position: absolute;
+    top: 20px;
+    left: 17vw;
+}
+
+footer>#divCV>#pdf2:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 2px solid #F3005A;
+}
+
+footer>#divCV>#pdf2>div{
+    color: #E2E2E2;
+    position: absolute;
+    left: 35px;
+    bottom: 8px;
+}
+
+footer>#divCV>#pdf2>img{
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+
+/*#sec1>#sec1sub>#pdf{*/
+/*    width: 125px;*/
+/*    height: 15px;*/
+/*    background-color: transparent;*/
+/*    border-radius: 25px;*/
+/*    border: 1px solid #A7033F;*/
+/*    position: absolute;*/
+/*    text-decoration: none;*/
+/*    font-family: "Indie Flower";*/
+/*}*/
+
+/*#sec1>#sec1sub>#pdf:hover{*/
+/*    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+/*    border: 2px solid #A7033F;*/
+/*}*/
+
+/*#sec1>#sec1sub>#pdf>div{*/
+/*    color: #E2E2E2;*/
+/*    position: absolute;*/
+/*    left: 35px;*/
+/*    bottom: 8px;*/
+/*    !*top: 0;*!*/
+/*    !*bottom: 0;*!*/
+/*    !*margin: auto;*!*/
+/*    !*right: 0;*!*/
+/*}*/
+
+/*#sec1>#sec1sub>#pdf>img{*/
+/*    position: absolute;*/
+/*    bottom: 4px;*/
+/*    left: 5px;*/
+/*}*/
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+footer>p{
+    /*position: absolute;*/
+    /*color: #2A2A2A;*/
+    /*font-family: 'Itim', cursive;*/
+    /*border: 1px solid #2A2A2A;*/
+    /*width: 50px;*/
+    /*height: 100px;*/
+
+    position: absolute;
+    border: 1px solid #A7033F;
+    border-radius: 25px;
+    width: 200px;
+    font-size: large;
+    padding: 10px;
+    color: #888888;
+    font-family: 'Itim', cursive;
+    top: 50px;
+    /*left: 75vw;*/
+    left: 35vw;
+
+    /*box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;*/
+    /*box-shadow: palevioletred 0px 5px 15px;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*///////////////////////////////////media queries//////////////////////////////////////////*/
+
+@media all and (max-width:768px) and (min-width: 425px){
+    header>div>nav>a{
+        color: #A7033F;
+    }
+}
+
+@media all and (max-width:425px){
+    header>div>nav>a{
+        color: tomato;
+    }
+}
