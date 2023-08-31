@@ -56,6 +56,19 @@ header>div>picture{
     left: 49.8vw;
     /*!*top: 0;*!*/
     /*margin: auto;*/
+
+    animation-name: my_animation6;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes my_animation6 {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+
+    }
 }
 
 /*#sec1>#myPic:hover{*/
@@ -84,6 +97,12 @@ header>div>picture{
     /*padding: 15px;*/
     /*position: absolute;*/
     /*left: 10vw;*/
+
+    animation-name: my_animation4;
+    animation-duration: 0.8s;
+    /*!*animation-direction: reverse;*!*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
 }
 
 #sec1>#sec1sub>h2{
@@ -98,6 +117,21 @@ header>div>picture{
     text-shadow: 2px 2px 4px #434343;
     position: relative;
     left: 1.5vw;
+
+    animation-name: my_animation4;
+    animation-duration: 1.2s;
+    /*!*animation-direction: reverse;*!*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+}
+
+@keyframes my_animation4 {
+    from{
+        transform: translateX(-280px);
+    }
+    to{
+
+    }
 }
 
 #sec1>#sec1sub>h3{
@@ -107,18 +141,21 @@ header>div>picture{
     /*padding: 15px;*/
     position: relative;
     left: 0.2vw;
+    animation-name: my_animation4;
+    animation-duration: 2.2s;
 }
 
-#sec1>#sec1sub>.btn1{
+#sec1>#sec1sub>#btnbtn>.btn1{
     position: relative;
     left: 30px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
     padding-top: 10px;
+
 }
 
-#sec1>#sec1sub>#pdf{
+#sec1>#sec1sub>#btnbtn>#pdf{
     width: 125px;
     height: 15px;
     background-color: transparent;
@@ -127,14 +164,16 @@ header>div>picture{
     position: absolute;
     text-decoration: none;
     font-family: "Indie Flower";
+    /*animation-name: my_animation4;*/
+    /*animation-duration: 4s;*/
 }
 
-#sec1>#sec1sub>#pdf:hover{
+#sec1>#sec1sub>#btnbtn>#pdf:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: 2px solid #A7033F;
 }
 
-#sec1>#sec1sub>#pdf>div{
+#sec1>#sec1sub>#btnbtn>#pdf>div{
     color: #E2E2E2;
     position: absolute;
     left: 35px;
@@ -145,15 +184,25 @@ header>div>picture{
     /*right: 0;*/
 }
 
-#sec1>#sec1sub>#pdf>img{
+#sec1>#sec1sub>#btnbtn>#pdf>img{
     position: absolute;
     bottom: 4px;
     left: 5px;
 }
 
-#sec1>#sec1sub>#qr{
+#sec1>#sec1sub>#btnbtn{
+    position: absolute;
+    animation-name: my_animation4;
+    animation-duration: 3.2s;
+}
+
+#sec1>#sec1sub>#btnbtn>#qr{
+    position: relative;
     left: 170px;
-    top: 3px;
+    /*bottom: 0;*/
+    /*top: 0;*/
+    /*margin: auto;*/
+    top: 1px;
 }
 
 /*#sec1>#sec1sub>#qr:hover{*/
@@ -167,7 +216,49 @@ header>div>picture{
 #sec1>#sec1sub>.btn2{
     position: relative;
     left: 10px;
+    top: 50px;
     filter: grayscale(95%);
+}
+
+#sec1>#sec1sub>a>#img1{
+    animation-name: my_animation5;
+    animation-duration: 0.2s;
+}
+
+#sec1>#sec1sub>a>#img2{
+    animation-name: my_animation5;
+    animation-duration: 0.7s;
+}
+
+
+#sec1>#sec1sub>a>#img3{
+    animation-name: my_animation5;
+    animation-duration: 1.2s;
+}
+
+
+#sec1>#sec1sub>a>#img4{
+    animation-name: my_animation5;
+    animation-duration: 1.7s;
+}
+
+#sec1>#sec1sub>a>#img5{
+    animation-name: my_animation5;
+    animation-duration: 2.2s;
+}
+
+#sec1>#sec1sub>a>#img6{
+    animation-name: my_animation5;
+    animation-duration: 2.5s;
+}
+
+@keyframes my_animation5 {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+
+    }
 }
 
 #sec1>#sec1sub>.btn2:hover{
@@ -212,7 +303,24 @@ header>div>picture{
     top: 250px;
     left: 390px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    animation-name: my_animation7;
+    animation-duration: 3s;
 }
+
+
+@keyframes my_animation7 {
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 
 /*#sec2>p{*/
 /*    position: absolute;*/
@@ -278,6 +386,7 @@ header>div>picture{
     border-top-color: transparent;
     width: 25vw;
     top: 8vh;
+    height: 53vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -316,11 +425,79 @@ header>div>picture{
     /*margin: auto;*/
 }
 
-#sec3>#sec3sub>#div2>a>img{
-    position: relative;
-    top: 8vh;
+/*#sec3>#sec3sub>#div2>a>img{*/
+/*    position: relative;*/
+/*    top: 8vh;*/
+/*    left: 10px;*/
+/*}*/
+
+#sec3>#sec3sub>#div2>#web{
+    width: 140px;
+    height: 35px;
+    background-color: #2A2A2A;
+    border-radius: 25px;
+    border: 1px solid #F3005A;
+    text-decoration: none;
+    font-family: 'Itim', cursive;
+    position: absolute;
+    top: 45vh;
     left: 10px;
 }
+
+#sec3>#sec3sub>#div2>#web:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 2px solid #F3005A;
+}
+
+#sec3>#sec3sub>#div2>#web>img{
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+}
+
+#sec3>#sec3sub>#div2>#web>div{
+    color: #E2E2E2;
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
+}
+
+/*#sec3>#sec3sub>#div2>#web{*/
+/*    width: 125px;*/
+/*    height: 15px;*/
+/*    background-color: transparent;*/
+/*    border-radius: 25px;*/
+/*    border: 1px solid #A7033F;*/
+/*    text-decoration: none;*/
+/*    font-family: "Itim";*/
+
+/*    position: relative;*/
+/*    top: 8vh;*/
+/*    left: 10px;*/
+/*}*/
+
+/*#sec3>#sec3sub>#div2>#web:hover{*/
+/*    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+/*    border: 2px solid #A7033F;*/
+/*}*/
+
+/*#sec3>#sec3sub>#div2>#web>div{*/
+/*    color: #E2E2E2;*/
+/*    position: absolute;*/
+/*    left: 35px;*/
+/*    bottom: 8px;*/
+/*    !*top: 0;*!*/
+/*    !*bottom: 0;*!*/
+/*    !*margin: auto;*!*/
+/*    !*right: 0;*!*/
+/*}*/
+
+/*#sec3>#sec3sub>#div2>#web>img{*/
+/*    position: absolute;*/
+/*    bottom: 4px;*/
+/*    left: 5px;*/
+/*}*/
+
 
 #sec3>#sec3sub2{
     position: absolute;
@@ -363,7 +540,7 @@ header>div>picture{
     border-bottom-left-radius: 25px;
     border-top-color: transparent;
     width: 25vw;
-    height: 51vh;
+    height: 53vh;
     top: 8vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -399,12 +576,43 @@ header>div>picture{
     /*margin: auto;*/
 }
 
-#sec3>#sec3sub2>#div4>a>img{
-    position: relative;
-    top: 23vh;
+/*#sec3>#sec3sub2>#div4>a>img{*/
+/*    position: relative;*/
+/*    top: 23vh;*/
+/*    left: 10px;*/
+/*}*/
+
+
+#sec3>#sec3sub2>#div4>#web2{
+    width: 140px;
+    height: 35px;
+    background-color: #2A2A2A;
+    border-radius: 25px;
+    border: 1px solid #F3005A;
+    text-decoration: none;
+    font-family: 'Itim', cursive;
+    position: absolute;
+    top: 45vh;
     left: 10px;
 }
 
+#sec3>#sec3sub2>#div4>#web2:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 2px solid #F3005A;
+}
+
+#sec3>#sec3sub2>#div4>#web2>img{
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+}
+
+#sec3>#sec3sub2>#div4>#web2>div{
+    color: #E2E2E2;
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
+}
 
 #sec4{
     position: absolute;
@@ -1986,6 +2194,12 @@ footer>p{
 }
 
 /*///////////////////////////////////media queries//////////////////////////////////////////*/
+
+@media all and (max-width:1350px){
+    header>div>nav>a{
+        color: #A7033F;
+    }
+}
 
 @media all and (max-width:768px) and (min-width: 425px){
     header>div>nav>a{
