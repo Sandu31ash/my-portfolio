@@ -963,3 +963,244 @@ header>div>picture{
     bottom: 5px;
     left: 8px;
 }
+
+
+#sec6{
+    position: absolute;
+    top: 545vh;
+}
+
+#sec6>#assignments{
+    opacity: 0;
+}
+
+#sec6>div{
+    display: inline-flex;
+    position: absolute;
+    top: 100px;
+    left: 18vw;
+}
+
+#sec6>div>div{
+    position: relative;
+    background-color: #5B0021;
+    /*background-color: #A7033F;*/
+    /*opacity: 25%;*/
+    border-radius: 20px;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#sec6>div>div:hover{
+    transform: scale(1.1);
+    /*border: 1px solid palevioletred;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1;
+    border: 1px solid transparent;
+
+    animation-name: my_animation3;
+    animation-duration: 0.5s;
+    /*animation-direction: reverse;*/
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes my_animation3 {
+    0%{
+
+    }
+    25%{
+        border-top-color: #A7033F;
+    }
+    50%{
+        border-right-color:  #A7033F;
+    }
+    75%{
+        border-bottom-color:  #A7033F;
+    }
+    100%{
+        border-left-color:  #A7033F;
+    }
+}
+
+#sec6>.setC>.divA>.p{
+    color: #A9A9A9;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Itim' , cursive;
+    text-align: center;
+}
+
+#sec6>.setC>div>.assign{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    background-color: #2A2A2A;
+    width: 200px;
+    height: 35px;
+    /*opacity: 75%;*/
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#sec6>#set1>div>div>div{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    color: #A9A9A9;
+    z-index: 1;
+    font-family: 'Itim' , cursive;
+}
+
+#sec6>.setC>div>div>.divImg>img{
+    position: absolute;
+    left: 120px;
+}
+
+#sec6>.setC>div>div>.divImg:hover{
+    transform: translateY(-3px);
+}
+
+#sec6>.setC>div>div>.divImg>{
+    position: absolute;
+    left: 150px;
+    width: 20px;
+    height: 20px;
+}
+
+#sec6>#set2>.divA>.p{
+    top: 35px;
+}
+
+#sec6>#set2{
+    position: absolute;
+    top: 43vh;
+}
+
+/*/////////////////////////////////////*/
+
+
+#sec6>#set2>div>.assign{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    background-color: #2A2A2A;
+    width: 200px;
+    height: 35px;
+    /*opacity: 75%;*/
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#sec6>#set2>div>div>div{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    color: #A9A9A9;
+    z-index: 1;
+    font-family: 'Itim' , cursive;
+}
+
+/*#sec6>.setC>div>div>#divImg2>img{*/
+/*    position: absolute;*/
+
+/*}*/
+
+/*#sec6>.setC>div>div>#divImg2{*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
+
+#sec6>#set3{
+    position: absolute;
+    top: 69.5vh;
+}
+
+/*//////////////////////////////////////////////*/
+
+
+#sec6>#set3>div>.assign{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    background-color: #2A2A2A;
+    width: 200px;
+    height: 35px;
+    /*opacity: 75%;*/
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#sec6>#set3>div>div>div{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    color: #A9A9A9;
+    z-index: 1;
+    font-family: 'Itim' , cursive;
+}
+
+#sec6>#set3>.divA:nth-last-child(1)>.p{
+    top: 35px;
+}
+
+/*#sec6>#set3>div>div>.divImg>img{*/
+/*    position: absolute;*/
+
+/*}*/
+
+/*#sec6>#set3>div>div>.divImg{*/
+/*    position: absolute;*/
+/*    !*left: 150px;*!*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
+
+
+/*#sec6>div>div:first-child{*/
+/*    !*left: 250px;*!*/
+/*}*/
+
+/*#sec6>div>div:nth-child(2){*/
+/*    !*left: 50px;*!*/
+/*}*/
+
