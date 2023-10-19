@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="../assests/css/normalize.css">
     <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/js/js.js">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Caprasimo&family=Cherry+Bomb+One&family=Indie+Flower&family=Kavoon&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assests/fontawesome/css/all.min.css"></head>
+    <link rel="stylesheet" href="../assests/fontawesome/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +42,10 @@
 
 <body>
 
+<div id="preloader">
+    <img src="/assests/preloader/Infinity-1.6s-200px.gif" alt="preloader" width="100">
+</div>
+
 <header>
     <div>
 
@@ -46,6 +56,29 @@
             <a href="#assignments">Assignments</a>
             <a href="#contact">Contact me</a>
             <!--            <i class="fa-solid fa-pizza-slice"></i>-->
+        </nav>
+
+        <div id="burger">
+
+            <button id="btnBurger">
+            <i class="fa-solid fa-bars fa-xl" style="color: #a51237;" id="i1"></i>
+
+            </button>
+            <button id="btnClose">
+                <i class="fa-solid fa-circle-xmark fa-xl" style="color: #8f0032;" id="i2"></i>
+            </button>
+        </div>
+
+        <nav id="nav2">
+            <div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
         </nav>
 
         <picture>
@@ -72,7 +105,7 @@
 
 <!--        <br><br><br>-->
     <section id="sec1sub">
-        <h1>Hey , It's me</h1>
+        <h1 id="hey">Hey , It's me</h1>
         <h2>Sanduni</h2>
 
         <h3>Software Engineer</h3>
@@ -120,7 +153,7 @@
         <img src="assests/images/about_my_pic.png" alt="about me">
         <h2>Software Engineer</h2>
 
-        <section>
+        <section data-aos="fade-right" data-aos-duration="2000">
         <p>You’re warmly welcome to my portfolio,
             where I'm excited to let you have a look into who I am. As a passionate software engineering student,
             I find immense joy in the art of coding and designing. With an open mind and a
@@ -144,7 +177,7 @@
 <!--<section>-->
     <section id="sec3">
         <h1 id="edu">Education</h1>
-        <section id="sec3sub">
+        <section id="sec3sub" data-aos="fade-down" data-aos-duration="2000">
         <div id="div1">
             <p>Studied @</p>
             <p>C.W.W.Kannangara Central College</p>
@@ -171,7 +204,7 @@
         </div>
         </section>
 
-        <section id="sec3sub2">
+        <section id="sec3sub2" data-aos="fade-up" data-aos-duration="2000">
         <div id="div3">
             <p>Currently Studying @</p>
             <p>Institute of Software Engineering</p>
@@ -205,23 +238,23 @@
             <img src="assests/images/skills1.png" alt=""><br><br><br>
 
             <div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="assests/images/frontend.png" alt="frontend">
                     <div>Frontend/Backend Developing</div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="assests/images/ui.png" alt="frontend">
                     <div>UI/UX Designing</div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="assests/images/web.png" alt="frontend">
                     <div>Web/App Developing</div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="assests/images/rubik.png" alt="rubik">
                     <div>Mathematical Aptitude</div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="assests/images/time.png" alt="time">
                     <div>Time Management</div>
                 </div>
@@ -250,7 +283,8 @@
 
         <h1 id="projects">Projects</h1>
 
-        <div id="pro1">
+        <div id="pro1" data-aos="fade-up"
+             data-aos-duration="3000">
 <!--        <a href="https://github.com/Sandu31ash/cuisine_compass" target="_blank">-->
 <!--            <img src="assests/images/cuisine_c1.png" alt=""></a><br>-->
 
@@ -276,7 +310,9 @@
 
         </div>
 
-        <div id="pro2">
+        <div id="pro2" data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="1500">
 <!--        <a href="https://github.com/Sandu31ash/cuisine_compass_layered/tree/master" target="_blank">-->
 <!--            <img src="assests/images/cuisine_c2.png" alt=""></a>-->
 
@@ -299,7 +335,8 @@
 
         </div>
 
-        <div id="pro3">
+        <div id="pro3" data-aos="fade-up"
+             data-aos-duration="3000">
 <!--        <a href="https://github.com/Sandu31ash/chat_app" target="_blank">-->
 <!--            <img src="assests/images/inp_pro.png" alt=""></a><br><br>-->
 
@@ -322,7 +359,9 @@
 
         </div>
 
-        <div id="pro4">
+        <div id="pro4" data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="1500">
             <div>
                 <div>
                     <div>ORM Concept with Hibernate Final Project</div>
@@ -340,7 +379,8 @@
         </div>
 
 
-        <div id="pro5">
+        <div id="pro5" data-aos="fade-up"
+             data-aos-duration="3000">
             <div>
                 <div>
                     <div>Internet Technologies Project using CSS & Bootstrap</div>
@@ -360,211 +400,357 @@
     </section>
 <!--</section>-->
 <!--        &lt;!&ndash;////////////////////////////////Assignments//////////////////////////////////////////&ndash;&gt;-->
-<!--<section>-->
-    <section id="sec6">
 
-        <h2 id="assignments">Assignments</h2>
+<section id="sec6">
 
-<!--        <div>-->
-            <div id="set1" class="setC">
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 01</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Absolute & Relative</p>
-                        <p>Positions</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 01</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+            <h2 id="assignments">Assignments</h2>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 02</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Absolute , Relative</p>
-                        <p>& Box Model</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 02</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 03</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Absolute , Relative</p>
-                        <p>& Fixed Position</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 03</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main"  data-aos="zoom-in" >
+        <a href="assests/assignments/ITS1119_assignment_03/Case_01" target="_blank">
+        <div class="div1">
+            <p>Absolute & Relative Positions</p>
+            <!--            <p>Positions</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 01</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 04</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Absolute , Relative</p>
-                        <p>& Sticky Position</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 04</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_assignment_03/Case_02/index.html" target="_blank">
+        <div class="div1">
+            <p>Absolute , Relative & Box Model</p>
+            <!--            <p>& Box Model</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 02</p>
+        </div>
+        </a>
+    </div>
 
-            <div id="set2" class="setC">
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 05</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Grid Layout</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 05</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-in">
+        <a href="assests/assignments/ITS1119_assignment_03/Case_03/index.html" target="_blank">
+        <div class="div1">
+            <p>Absolute , Relative & Fixed Position</p>
+            <!--            <p>& Fixed Position</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 03</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 06</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Grid Layout</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 06</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_assignment_03/Case_04/index.html" target="_blank">
+        <div class="div1">
+            <p>Absolute , Relative & Sticky Position</p>
+            <!--            <p>& Sticky Position</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 04</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 07</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Navigation Transition</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 07</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-in">
+        <a href="assests/assignments/ITS1119_assignment_03/Case_05/index.html" target="_blank">
+        <div class="div1">
+            <p>Grid Layout</p>
+        </div>
+        <div class="div2">
+            <p>Assignment 05</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 08</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Circle Border Transition</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 08</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_assignment_03/Case_06" target="_blank">
+        <div class="div1">
+            <p>Grid Layout</p>
+        </div>
+        <div class="div2">
+            <p>Assignment 06</p>
+        </div>
+        </a>
+    </div>
 
-            <div id="set3"  class="setC">
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 09</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Basic Rotation</p>
-                        <p>with Animation</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 09</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-in">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_01" target="_blank">
+        <div class="div1">
+            <p>Navigation Transition</p>
+        </div>
+        <div class="div2">
+            <p>Assignment 07</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 10</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Water Drop</p>
-                        <p>Animation</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 10</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_02" target="_blank">
+        <div class="div1">
+            <p>Circle Border Transition</p>
+        </div>
+        <div class="div2">
+            <p>Assignment 08</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 11</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Image Slider</p>
-                        <p>Animation</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 11</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
+    <div class="main" data-aos="zoom-in">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_03" target="_blank">
+        <div class="div1">
+            <p>Basic Rotation with Animation</p>
+            <!--            <p>with Animation</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 09</p>
+        </div>
+        </a>
+    </div>
 
-                <div class="divA">
-    <!--                <img src="assests/images/assign.png" alt="">-->
-    <!--                <h3>Assignment 12</h3>-->
-    <!--                <button type="button">View</button>-->
-                    <div class="p">
-                        <p>Car Animation</p>
-                    </div>
-                    <div class="assign">
-                        <div>Assignment 12</div>
-                        <div class="divImg">
-                            <img src="assests/images/view.png" alt="view">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_04" target="_blank">
+        <div class="div1">
+            <p>Water Drop Animation</p>
+            <!--            <p>Animation</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 10</p>
+        </div>
+        </a>
+    </div>
 
-<!--        </div>-->
-    </section>
-<!--</section>-->
-<!--        <br><br><br><br><br><br><br><br><br><br><br>-->
+    <div class="main" data-aos="zoom-in">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_05/index.html" target="_blank">
+        <div class="div1">
+            <p>Image Slider Animation</p>
+            <!--            <p>Animation</p>-->
+        </div>
+        <div class="div2">
+            <p>Assignment 11</p>
+        </div>
+        </a>
+    </div>
 
-<!--    </div>-->
+    <div class="main" data-aos="zoom-out">
+        <a href="assests/assignments/ITS1119_Assignment_04/Case_06" target="_blank">
+        <div class="div1">
+            <p>Car Animation</p>
+        </div>
+        <div class="div2">
+            <p>Assignment 12</p>
+        </div>
+        </a>
+    </div>
+
+</section>
+
+
+
+
+<!--    <section id="sec6">-->
+
+<!--        <h2 id="assignments">Assignments</h2>-->
+
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--            <div id="set1" class="setC">-->
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 01</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Absolute & Relative</p>-->
+<!--                        <p>Positions</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 01</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 02</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Absolute , Relative</p>-->
+<!--                        <p>& Box Model</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 02</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 03</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Absolute , Relative</p>-->
+<!--                        <p>& Fixed Position</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 03</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 04</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Absolute , Relative</p>-->
+<!--                        <p>& Sticky Position</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 04</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div id="set2" class="setC">-->
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 05</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Grid Layout</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 05</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 06</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Grid Layout</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 06</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 07</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Navigation Transition</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 07</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 08</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Circle Border Transition</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 08</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div id="set3"  class="setC">-->
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 09</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Basic Rotation</p>-->
+<!--                        <p>with Animation</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 09</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 10</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Water Drop</p>-->
+<!--                        <p>Animation</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 10</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 11</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Image Slider</p>-->
+<!--                        <p>Animation</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 11</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="divA">-->
+<!--    &lt;!&ndash;                <img src="assests/images/assign.png" alt="">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <h3>Assignment 12</h3>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <button type="button">View</button>&ndash;&gt;-->
+<!--                    <div class="p">-->
+<!--                        <p>Car Animation</p>-->
+<!--                    </div>-->
+<!--                    <div class="assign">-->
+<!--                        <div>Assignment 12</div>-->
+<!--                        <div class="divImg">-->
+<!--                            <img src="assests/images/view.png" alt="view">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    </section>-->
+
 
 <!--//////////////////////////////////////////////Side Line//////////////////////////////////////////////-->
 
@@ -688,16 +874,16 @@
 <!--                <input type="reset" value="reset">-->
 <!--                <input type="button" value="Submit">-->
 
-                <button type="reset">Reset</button>
+                <button type="reset" class="btnForm">Reset</button>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="btnForm">Submit</button>
 
             </form>
 <!--        </section>-->
 
         <div id="divCon">
             <!--        <img src="assests/images/whatsapp.png" alt="">-->
-            <i class="fa-brands fa-whatsapp fa-fade fa-2xl" style="color: #2A2A2A;"></i>
+            <i class="fa-brands fa-whatsapp fa-fade fa-2xl" style="color: #2A2A2A;" ></i>
             <span>+94776459396</span>
             <br> <br>
             <!--        <img src="assests/images/insta.png" alt="">-->
@@ -750,6 +936,50 @@
 
 
 <script src="../assests/fontawesome/js/all.min.js"></script>
+<script src="../assests/fontawesome/css/all.min.css"></script>
+<script src="./assests/js/lib/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+
+    window.addEventListener("load", () => {
+        console.log("A");
+        $("#preloader").css({"display": "none"});
+    });
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+        console.log("B");
+    });
+
+    $(window).ready(()=> {
+        console.log("C");
+    });
+
+</script>
+
+<script>
+    $("#btnBurger").on('click', ()=> {
+        // console.log("Hey");
+        $("#nav2").css("display", "block");
+        // $("#i1").css("display", "none");
+        // $("#i2").css("display", "block");
+        $("#btnBurger").css("display", "none");
+        $("#btnClose").css("display", "block");
+    });
+
+    $("#btnClose").on('click', ()=> {
+        $("#nav2").css("display", "none");
+        $("#btnClose").css("display", "none");
+        $("#btnBurger").css("display", "block");
+    });
+
+    // $(".main").eq[0].on('click', ()=>{
+    //
+    // });
+
+</script>
+
 </body>
 
 </html>
