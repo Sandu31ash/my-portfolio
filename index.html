@@ -10,7 +10,9 @@
     <link rel="icon" type="image/x-icon" href="assests/images/favicon.ico">
 
     <link rel="stylesheet" href="../assests/css/normalize.css">
+<!--    <link rel="stylesheet" href="/style.css">-->
     <link rel="stylesheet" href="assests/css/style.css">
+
     <link rel="stylesheet" href="assests/js/js.js">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +27,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<!--    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>-->
+
 </head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,10 +111,12 @@
 
 <!--        <br><br><br>-->
     <section id="sec1sub">
+<!--        <p id="demo"></p>-->
         <h1 id="hey">Hey , It's me</h1>
         <h2>Sanduni</h2>
-
         <h3>Software Engineer</h3>
+
+<!--        <h3>I'm a <span class="text"></span></h3>-->
 
 <!--        <a href="assests/pdf/cv.pdf" target="_blank" class="btn1"><img src="assests/images/cvBtn.png" alt=""></a>-->
         <div id="btnbtn">
@@ -118,6 +126,7 @@
         </a>
         <a href="assests/pdf/qr.pdf" target="_blank" class="btn1" id="qr"><img src="assests/images/qr.png" alt=""></a><br><br>
         </div>
+
                 <a href="https://web.whatsapp.com/" target="_blank" class="btn2"><img src="assests/images/whatsapp_color.png" alt="" id="img1"></a>
                 <a href="https://www.instagram.com/" target="_blank" class="btn2"><img src="assests/images/insta_color.png" alt="" id="img2"></a>
                 <a href="https://www.linkedin.com/in/sanduni-h-b0255a27b/" target="_blank" class="btn2">
@@ -929,6 +938,7 @@
             questions or simply wanting to say hello, feel free to reach out.  I'm always being excited to hear from
             you and explore how we can work together. <i class="fa-regular fa-thumbs-up" style="color:#2A2A2A;"></i></p>
 
+<!--        <span>Copyright © 2023 Ash | All Rights Reserved</span>-->
 
     </footer>
 
@@ -941,6 +951,15 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
+
+    // var typed = new typed(".text",{
+    //     strings:["Software Engineer" , "Fullstack Developer", "UI/UX Designer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 100,
+    //     backDelay: 1000,
+    //     loop:true
+    // });
+
     AOS.init();
 
     window.addEventListener("load", () => {
@@ -956,9 +975,6 @@
         console.log("C");
     });
 
-</script>
-
-<script>
     $("#btnBurger").on('click', ()=> {
         // console.log("Hey");
         $("#nav2").css("display", "block");
@@ -969,6 +985,12 @@
     });
 
     $("#btnClose").on('click', ()=> {
+        $("#nav2").css("display", "none");
+        $("#btnClose").css("display", "none");
+        $("#btnBurger").css("display", "block");
+    });
+
+    $("#nav2").on('click', ()=> {
         $("#nav2").css("display", "none");
         $("#btnClose").css("display", "none");
         $("#btnBurger").css("display", "block");
