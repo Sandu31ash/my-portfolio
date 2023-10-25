@@ -1,3 +1,5 @@
+/*@import url('hhtps://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');*/
+
 body {
     background-color: rgb(42, 42, 42);
     overflow-x: hidden;
@@ -73,22 +75,22 @@ header > div > picture {
 #myPic {
     position: absolute;
     left: 49.8vw;
-    animation-name: my_animation6;
-    animation-duration: 2s;
+    /*animation-name: my_animation6;*/
+    /*animation-duration: 2s;*/
 }
 
 #myPic > img {
     width: 44vw;
 }
 
-@keyframes my_animation6 {
-    0% {
-        transform: translateX(-500px);
-    }
+/*@keyframes my_animation6 {*/
+/*    0% {*/
+/*        transform: translateX(-500px);*/
+/*    }*/
 
-    100% {
-    }
-}
+/*    100% {*/
+/*    }*/
+/*}*/
 
 #sec1sub {
     width: 50vw;
@@ -136,10 +138,46 @@ header > div > picture {
     font-family: "Indie Flower";
     font-size: 32px;
     color: rgb(204, 204, 204);
-    position: relative;
-    left: 0.2vw;
+    position: absolute;
+    top: 30vh;
+    /*left: -210px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    text-align: center;
+    /*alignment: center;*/
     animation-name: my_animation4;
     animation-duration: 2.2s;
+}
+
+#sec1>#sec1sub>h3>.multiple-text{
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    color: #A7033F;
+}
+
+
+#sec1>#sec1sub>h3>span::after {
+    content: "|";
+    bottom: 5px;
+    position: relative;
+    /*font-size: xx-large;*/
+    font-weight: lighter;
+    font-family: "Agency FB";
+    animation: blink 0.7s infinite;
+}
+
+#sec1>#sec1sub>h3>span::before {
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+#sec1>#sec1sub>h3>span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
 }
 
 #sec1 > #sec1sub > #btnbtn > .btn1 {
@@ -147,6 +185,144 @@ header > div > picture {
     left: 30px;
     padding: 10px 0px;
 }
+
+#sec1>#sec1sub>.btnCon{
+    position: relative;
+    /*left: 0;*/
+    right: 0;
+    margin: auto;
+    left: 1vw;
+    top: 17vh;
+}
+
+#sec1>#sec1sub>.btnCon>a{
+    position: relative;
+    /*top: 10vh;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background: transparent;
+    border: 2px solid #A7033F;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 3px 2px 3px 0;
+}
+
+/*#sec1>#sec1sub>.btnCon>a>i{*/
+/*    width: 5vw;*/
+/*    aspect-ratio: 1/1;*/
+/*}*/
+
+#sec1>#sec1sub>.btnCon>a:hover{
+    background: #A7033F;
+    color: white;
+    box-shadow: 0 0 20px #A7033F;
+    transition-duration: 0.5s;
+    transform: translateY(-10px);
+    width: 35px;
+}
+
+/*@-webkit-keyframes jello {*/
+/*    from, 11.1%, to {*/
+/*        -webkit-transform: translate3d(0, 0, 0);*/
+/*        transform: translate3d(0, 0, 0);*/
+/*    }*/
+
+/*    22.2% {*/
+/*        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);*/
+/*        transform: skewX(-12.5deg) skewY(-12.5deg);*/
+/*    }*/
+
+/*    33.3% {*/
+/*        -webkit-transform: skewX(6.25deg) skewY(6.25deg);*/
+/*        transform: skewX(6.25deg) skewY(6.25deg);*/
+/*    }*/
+
+/*    44.4% {*/
+/*        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);*/
+/*        transform: skewX(-3.125deg) skewY(-3.125deg);*/
+/*    }*/
+
+/*    55.5% {*/
+/*        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);*/
+/*        transform: skewX(1.5625deg) skewY(1.5625deg);*/
+/*    }*/
+
+/*    66.6% {*/
+/*        -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);*/
+/*        transform: skewX(-0.78125deg) skewY(-0.78125deg);*/
+/*    }*/
+
+/*    77.7% {*/
+/*        -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);*/
+/*        transform: skewX(0.390625deg) skewY(0.390625deg);*/
+/*    }*/
+
+/*    88.8% {*/
+/*        -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);*/
+/*        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);*/
+/*    }*/
+/*}*/
+
+/*@keyframes jello {*/
+/*    from, 11.1%, to {*/
+/*        -webkit-transform: translate3d(0, 0, 0);*/
+/*        transform: translate3d(0, 0, 0);*/
+/*    }*/
+
+/*    22.2% {*/
+/*        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);*/
+/*        transform: skewX(-12.5deg) skewY(-12.5deg);*/
+/*    }*/
+
+/*    33.3% {*/
+/*        -webkit-transform: skewX(6.25deg) skewY(6.25deg);*/
+/*        transform: skewX(6.25deg) skewY(6.25deg);*/
+/*    }*/
+
+/*    44.4% {*/
+/*        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);*/
+/*        transform: skewX(-3.125deg) skewY(-3.125deg);*/
+/*    }*/
+
+/*    55.5% {*/
+/*        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);*/
+/*        transform: skewX(1.5625deg) skewY(1.5625deg);*/
+/*    }*/
+
+/*    66.6% {*/
+/*        -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);*/
+/*        transform: skewX(-0.78125deg) skewY(-0.78125deg);*/
+/*    }*/
+
+/*    77.7% {*/
+/*        -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);*/
+/*        transform: skewX(0.390625deg) skewY(0.390625deg);*/
+/*    }*/
+
+/*    88.8% {*/
+/*        -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);*/
+/*        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);*/
+/*    }*/
+/*}*/
+
+/*.jello {*/
+/*    -webkit-animation-name: jello;*/
+/*    animation-name: jello;*/
+/*    -webkit-transform-origin: center;*/
+/*    transform-origin: center;*/
+/*}*/
+
+/*.animated {*/
+/*    -webkit-animation-duration: 1s;*/
+/*    animation-duration: 1s;*/
+/*    -webkit-animation-fill-mode: both;*/
+/*    animation-fill-mode: both;*/
+/*}*/
 
 #sec1 > #sec1sub > #btnbtn > #pdf {
     width: 125px;
@@ -160,6 +336,7 @@ header > div > picture {
 }
 
 #sec1 > #sec1sub > #btnbtn > #pdf:hover {
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: 2px solid rgb(167, 3, 63);
 }
@@ -181,6 +358,7 @@ header > div > picture {
     position: absolute;
     animation-name: my_animation4;
     animation-duration: 3.2s;
+    top: 45vh;
 }
 
 #sec1 > #sec1sub > #btnbtn > #qr {
@@ -1910,7 +2088,7 @@ footer > span {
     }
 }
 
-@media (max-width: 1340px) and (min-width: 1024px) {
+@media(max-width: 1340px) and (min-width: 1024px) {
     header > div > nav > a {
         color: cyan;
     }
@@ -1920,6 +2098,12 @@ footer > span {
         bottom: -90vh;
         width: 44vw;
     }
+
+    /*#sec1 > #sec1sub > h3 {*/
+    /*    !*left: -145px;*!*/
+    /*    width: 26vw;*/
+    /*    !*left: 0;*!*/
+    /*}*/
 
     #sec7 > #div7_4 > div:nth-child(8) {
     }
@@ -2079,9 +2263,18 @@ footer > span {
         left: -4px;
     }
 
+    #sec1>#sec1sub>.btnCon{
+        left: -5px;
+        top: 20vh;
+    }
+
     #sec1 > #sec1sub > .btn2 > img {
         width: 31px;
         aspect-ratio: 1 / 1;
+    }
+
+    #sec1>#sec1sub>h3{
+        /*left: 100vw;*/
     }
 
     #sec1 > #sec1sub > #btnbtn > #pdf {
@@ -2752,11 +2945,21 @@ footer > span {
     #sec1 > #sec1sub {
         position: absolute;
         top: 125px;
-        left: 10vw;
+        left: 8vw;
+    }
+
+    #sec1>#sec1sub>.btnCon{
+        left: -20px;
+        top: 18vh;
+    }
+
+    #sec1>#sec1sub>.btnCon>a{
+        width: 25px;
     }
 
     #sec1 > #sec1sub > #btnbtn {
         right: 53vw;
+        top: 33vh;
     }
 
     #sec1 > #sec1sub > .btn2 > img {
@@ -2799,7 +3002,10 @@ footer > span {
     }
 
     #sec1 > #sec1sub > h3 {
-        font-size: 20px;
+        font-size: 25px;
+        top: 20vh;
+        left: -15px;
+        /*width: 28vw;*/
     }
 
     #sec2 > img {
@@ -4005,6 +4211,10 @@ footer > span {
         left: 30vw;
     }
 
+    #sec1>#sec1sub>#btnbtn{
+        top: 36vh;
+    }
+
     #sec1 > #sec1sub > #btnbtn > #pdf {
         width: 90px;
         height: 10px;
@@ -4031,14 +4241,30 @@ footer > span {
 
     #sec1 > #sec1sub > h1 {
         font-size: 30px;
+        position: relative;
+        top: 5vh;
     }
 
     #sec1 > #sec1sub > h2 {
         font-size: 30px;
+        top: 3vh;
     }
 
     #sec1 > #sec1sub > h3 {
-        font-size: 20px;
+        font-size: 25px;
+        top: 23vh;
+    }
+
+    #sec1>#sec1sub>.btnCon{
+        padding:0;
+        margin: 0;
+        left: -15px;
+        width: 195px;
+    }
+
+    #sec1>#sec1sub>.btnCon>a{
+        width: 25px;
+        margin: 0;
     }
 
     #sec2 > img {
@@ -4928,12 +5154,19 @@ footer > span {
         left: 30vw;
     }
 
-    #sec1 > #sec1sub > h1 {
-        color: rgb(167, 3, 63);
-    }
-
     #sec1 > #sec1sub > #btnbtn {
         right: 57vw;
+        top: 36vh;
+    }
+
+    #sec1>#sec1sub>.btnCon{
+        top: 18vh;
+    }
+
+    #sec1>#sec1sub>h3{
+        /* top: 10vh; */
+        width: 60vw;
+        left: -42px;
     }
 
     #sec1 > #sec1sub > .btn2 > img {
@@ -4966,6 +5199,11 @@ footer > span {
         font-size: x-large;
         left: 31vw;
     }
+
+
+    /*#sec1>#sec1sub>h3{*/
+    /*    left: -22px;*/
+    /*}*/
 
     #sec2 > section {
         width: 42vw;
@@ -5391,16 +5629,34 @@ footer > span {
     }
 
     #sec1 > #sec1sub > h3 {
-        font-size: 12vw;
+        font-size: 10vw;
         width: 100vw;
         height: 2vh;
-        left: -3vw;
-        top: 2vh;
+        /* left: -3vw; */
+        top: 30vh;
+    }
+
+
+    /*#sec1>#sec1sub>h3{*/
+    /*    left: -35px;*/
+    /*}*/
+
+    #sec1>#sec1sub>.btnCon{
+        padding:0;
+        margin: 0;
+        top: 150px;
+        left: 5px;
+        width: 255px;
+    }
+
+    #sec1>#sec1sub>.btnCon>a{
+        width: 35px;
+        margin: 0;
     }
 
     #sec1 > #sec1sub > #btnbtn {
         right: 53vw;
-        top: 47vh;
+        top: 48vh;
     }
 
     #sec1 > #sec1sub > .btn2 > img {
