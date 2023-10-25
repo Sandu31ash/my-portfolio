@@ -57,6 +57,7 @@ header > div > nav > a:hover {
     color: rgb(167, 3, 63);
     font-size: larger;
     font-weight: bolder;
+    text-shadow: 0 0 10px hotpink;
 }
 
 header > div > picture {
@@ -1426,7 +1427,7 @@ header > div > picture {
     }
 }
 
-#sec6 > .main > a > .div2 {
+#sec6 > .main > .div2 {
     position: absolute;
     top: 125px;
     border-radius: 35px 35px 50px 50px;
@@ -1435,16 +1436,18 @@ header > div > picture {
     background-color: rgb(42, 42, 42);
 }
 
-#sec6 > .main > a > .div1 {
+#sec6 > .main > .div1 {
     width: 150px;
     height: 50px;
     position: absolute;
     inset: 0px;
+    left: 0;
+    right: 0;
     margin: auto;
     display: block;
 }
 
-#sec6 > .main > a > .div1 > p {
+#sec6 > .main > .div1 > p {
     position: absolute;
     font-size: medium;
     color: rgb(226, 226, 226);
@@ -1457,15 +1460,53 @@ header > div > picture {
     font-family: Itim, cursive;
 }
 
-#sec6 > .main > a > .div1 > p:nth-child(2) {
+#sec6 > .main > .div1 > p:nth-child(2) {
 }
 
-#sec6 > .main > a > .div2 > p {
+
+#sec6 > .main > .div1 > .git{
+    position: absolute;
+    top: 7vh;
+    /*left: 13vw;*/
+    left: 90px;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+
+/*#sec6 > .main > .div1 > .git:hover{*/
+/*    !*display: none;*!*/
+/*        */
+/*}*/
+
+#sec6 > .main > .div1 > .view{
+    position: absolute;
+    top: 7vh;
+    /*left: 5vw;*/
+    left: 45px;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+#sec6 > .main > .div2 p {
     color: white;
     text-align: center;
     margin: 2px 0px 0px;
     font-family: Itim, cursive;
 }
+
+/*#sec6 > .main > a > .div2 > div {*/
+/*    display: block;*/
+/*}*/
+
+/*#sec6 > .main > a > .div2 > div> img {*/
+/*    position: relative;*/
+/*    bottom: 3.5vh;*/
+/*    left: 160px;*/
+/*    width: 3vw;*/
+/*}*/
 
 #sec7 > #div7_1 {
     width: 1px;
