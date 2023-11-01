@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(42, 42, 42);
+    /*background-color: rgb(42, 42, 42);*/
+    background-color: #2A2A2A;
     overflow-x: hidden;
 }
 
@@ -25,7 +26,7 @@ header {
 }
 
 header > div {
-    background-color: rgb(42, 42, 42);
+    background-color: #2A2A2A;
     height: 10vh;
     width: 100%;
     position: fixed;
@@ -3603,10 +3604,10 @@ footer > span {
     }
 
     #sec7 > #div7_4 {
-        width: 5.5vw;
+        width: 5vw;
         height: 52vh;
         left: 3.5vw;
-        bottom: 920vh;
+        bottom: 1060vh;
     }
 
     #sec7 > #div7_5 {
@@ -3652,9 +3653,34 @@ footer > span {
         left: 5px;
     }
 
+    #sec7 > #div7_8 > div:nth-child(6){
+        left: 3px;
+    }
+
+    #sec7 > #div7_8 > div:nth-child(7){
+        left: 2px;
+    }
+
+    #sec7 > #div7_8 > div:nth-child(8){
+        left: 3px;
+    }
+
+    #sec7 > #div7_8 > div:nth-child(9){
+        left: 3px;
+    }
+
+    #sec7 > #div7_8 > div:nth-child(10){
+        left: 5px;
+    }
+
+    #sec7 > #div7_8 > div:nth-child(11){
+        left: 5px;
+    }
+
+
     footer {
         position: absolute;
-        top: 1110vh;
+        top: 1050vh;
         width: 100%;
         height: 78vh;
         background-color: rgb(118, 0, 43);
